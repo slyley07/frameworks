@@ -1,0 +1,206 @@
+html ::-webkit-scrollbar {
+  width: 12px; }
+html ::-webkit-scrollbar-thumb {
+  background-color: #DCDADA;
+  border: 1px solid #A9A9A9;
+  border-radius: 15px; }
+
+body {
+  font-family: "Lato", sans-serif; }
+  body ::-webkit-scrollbar {
+    width: 10px; }
+  body ::-webkit-scrollbar-thumb {
+    background-color: #DCDADA;
+    border: 1px solid #A9A9A9;
+    border-radius: 15px; }
+
+.header {
+  font-size: 1.5em;
+  padding: 1em;
+  width: 860px;
+  height: 1em;
+  margin: 0 auto;
+  color: #A9A9A9; }
+  .header h1 {
+    float: left;
+    margin: 0; }
+  .header .nav {
+    display: inline-block;
+    float: right;
+    margin-bottom: 2em; }
+    .header .nav ul {
+      list-style-type: none;
+      padding: 0.3em 1em 0 1em;
+      margin: 0;
+      border-bottom: 1px solid #A9A9A9; }
+      .header .nav ul li {
+        display: inline-block;
+        margin: 0 0.7em;
+        border: 1px solid #A9A9A9;
+        border-bottom: 1px solid #FFFFFF;
+        padding: 0.2em;
+        border-radius: 0.5em 0.5em 0 0; }
+        .header .nav ul li a {
+          color: #000000;
+          text-decoration: none; }
+
+.main {
+  clear: both;
+  width: 700px;
+  margin: 3em auto; }
+  .main h1 {
+    font-size: 2.5em; }
+  .main h2 {
+    font-size: 2em; }
+  .main h3 {
+    font-size: 1.5em; }
+  .main h4 {
+    font-size: 1em; }
+  .main h5 {
+    font-size: 0.8em; }
+  .main h6 {
+    font-size: 0.7em; }
+  .main p {
+    font-size: 1.2em;
+    margin: 0.5em auto; }
+  .main ul {
+    font-size: 1.2em; }
+  .main ol {
+    font-size: 1.2em; }
+  .main label {
+    font-size: 1.5em;
+    margin: 1em; }
+  .main textarea {
+    width: 200px;
+    height: 150px;
+    font-size: 1.3em;
+    margin: 1em; }
+  .main .textField {
+    width: 200px;
+    margin: 1em; }
+  .main .buttonXlarge {
+    border: none;
+    border-radius: 40px;
+    font-family: "Lato", sans-serif;
+    font-size: 3em;
+    background-color: #DCDADA;
+    padding: 0.1em 0.8em;
+    margin: 15px;
+    cursor: pointer; }
+  .main .buttonLarge {
+    border: none;
+    border-radius: 40px;
+    font-family: "Lato", sans-serif;
+    font-size: 2em;
+    background-color: #DCDADA;
+    padding: 0.1em 0.8em;
+    margin: 15px;
+    cursor: pointer; }
+  .main .buttonMedium {
+    border: none;
+    border-radius: 40px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5em;
+    background-color: #DCDADA;
+    padding: 0.1em 0.8em;
+    margin: 15px;
+    cursor: pointer; }
+  .main .buttonSmall {
+    border: none;
+    border-radius: 40px;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    background-color: #DCDADA;
+    padding: 0.1em 0.8em;
+    margin: 15px;
+    cursor: pointer; }
+  .main .buttonXsmall {
+    border: none;
+    border-radius: 40px;
+    font-family: "Lato", sans-serif;
+    font-size: 0.75em;
+    background-color: #DCDADA;
+    padding: 0.1em 0.8em;
+    margin: 15px;
+    cursor: pointer; }
+
+@media all and (max-width: 860px) {
+  .header {
+    font-size: 1.5em;
+    padding: 1em;
+    width: 400px;
+    height: 1em;
+    margin: 0 auto;
+    color: #A9A9A9; }
+    .header .nav {
+      margin-bottom: 0px;
+      float: right; }
+      .header .nav ul {
+        padding: 0.3em 0em 0em 0em;
+        margin: 0; }
+        .header .nav ul li {
+          margin: 0 0.1em; }
+
+  .main {
+    clear: both;
+    width: 400px;
+    margin: 0px auto; }
+    .main h1 {
+      margin: 20px; }
+    .main h2 {
+      margin: 20px; }
+    .main h3 {
+      margin: 20px; }
+    .main h4 {
+      margin: 20px; }
+    .main h5 {
+      margin: 20px; }
+    .main h6 {
+      margin: 20px; }
+    .main p {
+      width: 350px; }
+    .main ul {
+      width: 300px; }
+    .main ol {
+      width: 400px; } }
+@media all and (max-width: 400px) {
+  .header {
+    font-size: 1.5em;
+    padding: 1em;
+    width: 320px;
+    height: 1em;
+    margin: 0 auto;
+    color: #A9A9A9; }
+    .header .nav {
+      margin-bottom: 0px;
+      float: left; }
+      .header .nav ul {
+        padding: 0.3em 0em 0em 0em;
+        margin: 0; }
+        .header .nav ul li {
+          margin: 0 0.1em; }
+
+  .main {
+    clear: both;
+    width: 370px;
+    margin: 0px auto; }
+    .main h1 {
+      margin: 20px; }
+    .main h2 {
+      margin: 20px; }
+    .main h3 {
+      margin: 20px; }
+    .main h4 {
+      margin: 20px; }
+    .main h5 {
+      margin: 20px; }
+    .main h6 {
+      margin: 20px; }
+    .main p {
+      width: 350px; }
+    .main ul {
+      width: 300px; }
+    .main ol {
+      width: 300px; } }
+
+/*# sourceMappingURL=main.css.map */

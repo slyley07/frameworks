@@ -1,0 +1,324 @@
+$fontSize: 1em;
+$mainFont: 'Lato', sans-serif;
+//background color for buttons and borders
+$backgroundColor: #A9A9A9; 
+//background color for scrollbars
+$primaryColor: #DCDADA;
+
+html {
+	::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: $primaryColor;
+		border: 1px solid $backgroundColor;
+		border-radius: 15px;
+	}	
+}
+
+body {
+	font-family: $mainFont;
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: #DCDADA;
+		border: 1px solid $backgroundColor;
+		border-radius: 15px;
+	}
+}
+
+.header {
+	font-size: 1.5em;
+	padding: 1em;
+	width: 860px;
+	height: 1em;
+	margin: 0 auto;
+	color: $backgroundColor;
+
+	h1 {
+		float: left;
+		margin: 0;
+	}
+	
+	.nav {
+		display: inline-block;
+		float: right;
+		// border: 1px solid #000000;
+		margin-bottom: 2em;
+	
+		ul {
+			list-style-type: none;
+			padding: 0.3em 1em 0 1em;
+			margin: 0;
+			border-bottom: 1px solid $backgroundColor;
+			// float: right;
+			
+			li {
+				display: inline-block;
+				margin: 0 0.7em;
+				border: 1px solid $backgroundColor;
+				border-bottom: 1px solid #FFFFFF;
+				padding: 0.2em;
+				border-radius: 0.5em 0.5em 0 0;
+
+				a {
+					color: #000000;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.main {
+	clear: both;
+	width: 700px;
+	margin: 3em auto; 
+
+	h1 {
+		font-size: $fontSize * 2.5;
+	}
+
+	h2 {
+		font-size: $fontSize * 2;
+	}
+
+	h3 {
+		font-size: $fontSize * 1.5;
+	}
+
+	h4 {
+		font-size: $fontSize;
+	}
+
+	h5 {
+		font-size: $fontSize * 0.8;
+	}
+
+	h6 {
+			font-size: $fontSize * 0.7;
+	}
+
+	p {
+		font-size: $fontSize *1.2;
+		margin: $fontSize * 0.5 auto;
+	}
+
+	ul {
+		font-size: $fontSize * 1.2;
+	}
+
+	ol {
+		font-size: $fontSize * 1.2;
+	}
+
+	label {
+		font-size: $fontSize * 1.5;
+		margin: 1em;	
+	}
+
+	textarea {
+		width: 200px;
+		height: 150px;
+		font-size: $fontSize * 1.3;
+		margin: 1em;
+		// border-radius: 15px;
+	}
+
+	.textField {
+		width: 200px;
+		margin: 1em;
+
+		}
+
+	.buttonXlarge {
+		border: none;
+		border-radius: 40px;
+		font-family: $mainFont;
+		font-size: $fontSize * 3;
+		background-color: $primaryColor;
+		padding: 0.1em 0.8em;
+		margin: 15px;
+		cursor: pointer;
+	}
+
+	.buttonLarge {
+		border: none;
+		border-radius: 40px;
+		font-family: $mainFont;
+		font-size: $fontSize * 2;
+		background-color: $primaryColor;
+		padding: 0.1em 0.8em;
+		margin: 15px;
+		cursor: pointer;
+	}
+
+	.buttonMedium{
+		border: none;
+		border-radius: 40px;
+		font-family: $mainFont;
+		font-size: $fontSize * 1.5;
+		background-color: $primaryColor;
+		padding: 0.1em 0.8em;
+		margin: 15px;
+		cursor: pointer;
+	}
+
+	.buttonSmall {
+		border: none;
+		border-radius: 40px;
+		font-family: $mainFont;
+		font-size: $fontSize * 1;
+		background-color: $primaryColor;
+		padding: 0.1em 0.8em;
+		margin: 15px;
+		cursor: pointer;
+	}
+
+	.buttonXsmall {
+		border: none;
+		border-radius: 40px;
+		font-family: $mainFont;
+		font-size: $fontSize * 0.75;
+		background-color: $primaryColor;
+		padding: 0.1em 0.8em;
+		margin: 15px;
+		cursor: pointer;
+	}
+}
+
+@media all and (max-width: 860px) {
+	.header {
+		font-size: 1.5em;
+		padding: 1em;
+		width: 400px;
+		height: 1em;
+		margin: 0 auto;
+		color: $backgroundColor;
+		
+		.nav {
+			margin-bottom: 0px;
+			float: right;
+
+			ul {
+				padding: 0.3em 0em 0em 0em;
+				margin: 0;
+			
+				li {
+					margin: 0 0.1em;
+				}
+			}
+		}
+	}
+
+	.main {
+		clear: both;
+		width: 400px;
+		margin: 0px auto;
+
+		h1 {
+			margin: 20px;
+		}
+
+		h2 {
+			margin: 20px;
+		}
+
+		h3 {
+			margin: 20px;
+		}
+
+		h4 {
+			margin: 20px;
+		}
+
+		h5 {
+			margin: 20px;
+		}
+
+		h6 {
+			margin: 20px;
+		}
+
+		p {
+			width: 350px;
+		}
+
+		ul {
+			width: 300px;
+		}
+
+		ol {
+			width: 400px;
+		}
+	}
+}
+
+@media all and (max-width: 400px) {
+	.header {
+		font-size: 1.5em;
+		padding: 1em;
+		width: 320px;
+		height: 1em;
+		margin: 0 auto;
+		color: $backgroundColor;
+		
+		.nav {
+			margin-bottom: 0px;
+			float: left;
+
+			ul {
+				padding: 0.3em 0em 0em 0em;
+				margin: 0;
+			
+				li {
+					margin: 0 0.1em;
+				}
+			}
+		}
+	}
+
+	.main {
+		clear: both;
+		width: 370px;
+		margin: 0px auto;
+
+		h1 {
+			margin: 20px;
+		}
+
+		h2 {
+			margin: 20px;
+		}
+
+		h3 {
+			margin: 20px;
+		}
+
+		h4 {
+			margin: 20px;
+		}
+
+		h5 {
+			margin: 20px;
+		}
+
+		h6 {
+			margin: 20px;
+		}
+
+		p {
+			width: 350px;
+		}
+
+		ul {
+			width: 300px;
+		}
+
+		ol {
+			width: 300px;
+		}
+	}
+}
